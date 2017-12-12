@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<title>From the View of an Alumna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Asap", sans-serif;
+    }
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+    /* Create a Parallax Effect */
+    
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* First image (Logo. Full height) */
+    
+    .bgimg-1 {
+        background-image: url('imgs/tree.png');
+        min-height: 100%;
+    }
+    /* Second image (Portfolio) */
+    
+    .bgimg-2 {
+        background-image: url("imgs/leaf.jpeg");
+        min-height: 400px;
+    }
+    /* Third image (Contact) */
+    /*.bgimg-3 {
+        background-image: url("imgs/p4.jpg");
+        min-height: 400px;
+    }*/
+    
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+    /* Turn off parallax scrolling for tablets and phones */
+    
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1,
+        .bgimg-2 {
+            background-attachment: scroll;
+        }
+    }
+    #home {
+        animation-name: header;
+        animation-duration: 4s;
+    }
+    @keyframes header {
+        0% {
+            right: 0px;
+            top: 0px;
+        }
+        25% {
+            right: 200px;
+            top: 0px;
+        }
+        50% {
+            right: 200px;
+            top: 200px;
+        }
+        75% {
+            right: 0px;
+            top: 200px;
+        }
+        100% {
+            right: 0px;
+            top: 0px;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MEET THE LEADERSHIP</a>
+            <a href="events.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-calendar"></i> EVENTS</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-send-o"></i> CONTACT</a>
+            <a href="https://www.google.com/search?q=mount+zion+christian+schools+manchester+nh&spell=1&sa=X&ved=0ahUKEwiuv8_IrYPYAhWG24MKHY46ArMQvwUIJigA&biw=1056&bih=622" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="links.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-chain"></i> LINKS</a>
+            <a href="tuition.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-money"></i> TUITION</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">MEET THE FACULTY</a>
+            <a href="events.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EVENTS</a>
+            <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="links.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LINKS</a>
+            <a href="tuition.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TUITION</a>
+
+            <a href="https://www.google.com/search?q=mount+zion+christian+schools+manchester+nh&spell=1&sa=X&ved=0ahUKEwiuv8_IrYPYAhWG24MKHY46ArMQvwUIJigA&biw=1056&bih=622" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MOUNT ZION <span class="w3-hide-small">THROUGH THE EYES</span> OF AN ALUMNA</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p class="w3-center"><em>Welcome!</em>
+        </p>
+        <p>I graduated from Mount Zion in 2016 after attending the school since 6th grade. My hope is that through this webpage you will be able to experience the school even if you have never set foot in the building. I am so glad that this is the school that my parents chose for me, even if I was not happy with the thought of going to a new school at first. Mount Zion was and still is such a blessing in my life. I made life-long friends there who have had such an impact on my life.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>Alexus Lefort</b>
+                </p>
+                <br>
+                <img src="imgs/logo.gif" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>Mount Zion is a small private Christian school that offers preschool through 12th grade. In recent years, it has been ranked in the top 50 Christian schools in the United States by The Best Schools, and it accredited by Association of Christian Schools International and the New England Association of Schools and Colleges. Mount Zion is also a member of the Granite State Christian Schools Association. </p>
+            </div>
+        </div>
+        <p class="w3-large w3-center w3-padding-16">Number Time:</p>
+        <p class="w3-wide"><i class="fa fa-line-chart"></i>Growth from 16-17 to 17-18 School Year</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:15%">15%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-envelope-open-o"></i>College Acceptance Rate</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-graduation-cap"></i>Graduation Rate</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <div class="w3-third w3-section">
+            <span class="w3-xlarge">146</span>
+            <br> Students
+        </div>
+        <div class="w3-third w3-section">
+            <span class="w3-xlarge">34</span>
+            <br> Faculty and Staff
+        </div>
+        <div class="w3-third w3-section">
+            <span class="w3-xlarge">145+</span>
+            <br> Alumni
+        </div>
+    </div>
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">The Leadership</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">Administration</h3>
+        <p class="w3-center"><em>Many of the administration have been at the school since its creation in 2004.</em>
+        </p>
+        <br>
+
+        <table class="w3-table-all">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Position</th>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Carter</td>
+                <td>Headmaster</td>
+            </tr>
+            <tr>
+                <td>Kristen</td>
+                <td>Stuart</td>
+                <td>Principal, 7/8 English </td>
+            </tr>
+            <tr>
+                <td>Trish</td>
+                <td>Ayers</td>
+                <td>Admissions</td>
+            </tr>
+            <tr>
+                <td>Kim</td>
+                <td>Hamilton</td>
+                <td>Office Manager</td>
+            </tr>
+            <tr>
+                <td>Sean</td>
+                <td>Vaillancourt</td>
+                <td>Events Coordinator, D.R. Trip, Elementary and Middle School Chaplain, Middle School Bible</td>
+            </tr>
+            <tr>
+                <td>Sandy</td>
+                <td>Carter</td>
+                <td>Registrar, Accounts Receivable</td>
+            </tr>
+            <tr>
+                <td>Katie</td>
+                <td>Carminito</td>
+                <td>Accounts Payable</td>
+            </tr>
+        </table>
+    </div>
+    <div class="w3-content w3-container w3-padding-64" id="portfolio1">
+        <h3 class="w3-center">Team Leads</h3>
+        <p class="w3-center"><em>The Team Leaders meet each week and are in charge of the day-to-day operations and take care of any problems that may arise in their assigned school.</em>
+        </p>
+        <br>
+
+        <table class="w3-table-all">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Position</th>
+                <th>Team</th>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Carter</td>
+                <td>Headmaster</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Kristen</td>
+                <td>Stuart</td>
+                <td>Principal, 7/8 English </td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Beth</td>
+                <td>Cook</td>
+                <td>Kindergarten</td>
+                <td>Primary, Elementary</td>
+            </tr>
+            <tr>
+                <td>Helen</td>
+                <td>Glasier</td>
+                <td>Middle School Science, 5/6 English</td>
+                <td>Middle School</td>
+            </tr>
+            <tr>
+                <td>Dorothy</td>
+                <td>Rodriguez</td>
+                <td>Spanish</td>
+                <td>High School</td>
+            </tr>
+            <tr>
+                <td>Jodi</td>
+                <td>Lefort</td>
+                <td>Office, Athletic Director</td>
+                <td>Office, Athletics</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="portfolio2">
+        <h3 class="w3-center">Board</h3>
+        <p class="w3-center"><em>The Board meets every other month and is in charge of the direction of the school. It is currently made up of six members; each is a parent, alumnus, or a community partner.</em>
+        </p>
+        <br>
+
+        <table class="w3-table-all">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Position</th>
+            </tr>
+            <tr>
+                <td>Chris</td>
+                <td>Lefort</td>
+                <td>Chair</td>
+            </tr>
+            <tr>
+                <td>Dave</td>
+                <td>McDonald</td>
+                <td>Vice-Chair</td>
+            </tr>
+            <tr>
+                <td>Jason</td>
+                <td>Allen</td>
+                <td>Treasurer</td>
+            </tr>
+            <tr>
+                <td>Gracie</td>
+                <td>Hollingsworth</td>
+                <td>Secretary</td>
+            </tr>
+            <tr>
+                <td>Marc</td>
+                <td>Therrien</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Porter</td>
+                <td>Spooner</td>
+                <td>Member</td>
+            </tr>
+        </table>
+        <br>
+
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="imgs/wcne.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="workcampNE">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="imgs/first.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="High School Upperclassmen helps 1st & 2nd Grade with their projects">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="imgs/eden.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Eden Expedition">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="imgs/cross.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="teamwork">
+            </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+                <div class="w3-col m3">
+                    <img src="imgs/chapel.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Chapel">
+                </div>
+                <div class="w3-col m3">
+                    <img src="imgs/graduation.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2016 Graduation">
+                </div>
+                <div class="w3-col m3">
+                    <img src="imgs/soccer.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="soccer">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="imgs/basketball.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="basketball">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img src="1" id="img01" class="w3-image" alt="">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/mountzionnh/"></a><i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
+        </p>
+    </footer>
+
+    <!-- Add Google Maps -->
+    <script>
+        function myMap() {
+            myCenter = new google.maps.LatLng(42.9610357, -71.461345);
+            var mapOptions = {
+                center: myCenter,
+                zoom: 12,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+            marker.setMap(map);
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtlDNWRSVCemkzgcce3oQAIa4k27Za940&callback=myMap"></script>
+    <!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+
+</html>

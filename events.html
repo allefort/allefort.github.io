@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<title>From the View of an Alumna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Asap", sans-serif;
+    }
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+    /* Create a Parallax Effect */
+    
+    .bgimg-1,
+    .bgimg-2 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* First image (Logo. Full height) */
+    
+    .bgimg-1 {
+        background-image: url('imgs/fire.jpg');
+        min-height: 100%;
+    }
+    /* Second image (Portfolio) */
+    
+    .bgimg-2 {
+        background-image: url("imgs/leaf.jpeg");
+        min-height: 400px;
+    }
+    /* Third image (Contact) */
+    /*.bgimg-3 {
+        background-image: url("imgs/p4.jpg");
+        min-height: 400px;
+    }*/
+    
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+    /* Turn off parallax scrolling for tablets and phones */
+    
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1,
+        .bgimg-2 {
+            background-attachment: scroll;
+        }
+    }
+    #home {
+        animation-name: header;
+        animation-duration: 5s;
+    }
+    @keyframes header {
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+        25% {
+            left: 200px;
+            top: 0px;
+        }
+        50% {
+            left: 200px;
+            top: 200px;
+        }
+        75% {
+            left: 0px;
+            top: 200px;
+        }
+        100% {
+            left: 0px;
+            top: 0px;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MEET THE LEADERSHIP</a>
+            <a href="events.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-calendar"></i> EVENTS</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-send-o"></i> CONTACT</a>
+            <a href="https://www.google.com/search?q=mount+zion+christian+schools+manchester+nh&spell=1&sa=X&ved=0ahUKEwiuv8_IrYPYAhWG24MKHY46ArMQvwUIJigA&biw=1056&bih=622" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="links.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-chain"></i> LINKS</a>
+            <a href="tuition.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-money"></i> TUITION</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">MEET THE FACULTY</a>
+            <a href="events.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EVENTS</a>
+            <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="links.html" class="w3-bar-item w3-button" onclick="toggleFunction()">LINKS</a>
+            <a href="tuition.html" class="w3-bar-item w3-button" onclick="toggleFunction()">TUITION</a>
+            <a href="https://www.google.com/search?q=mount+zion+christian+schools+manchester+nh&spell=1&sa=X&ved=0ahUKEwiuv8_IrYPYAhWG24MKHY46ArMQvwUIJigA&biw=1056&bih=622" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">EVENTS<span class="w3-hide-small"></span></span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">MY FAVORITE</h3>
+        <p>I love all of the events at Mount Zion, but my favorite has to be the High School Spring Formal. The first one happened my freshman year, and I just fell in love with it. I ended up planning it every year after that as a part of Student Council. Everyone has a great time getting to dress up, dance, and have dinner together. Each year has a different theme, and they can get pretty creative. Some of my best memories were made during Spring Formal.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>Alexus Lefort</b>
+                </p>
+                <br>
+                <img src="imgs/logo.gif" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>Spring Formal may be my favorite, but in a close second is the Winter Soiree. It is similar to Spring Formal, except it is a semi-formal and it is held off campus. I only got to attend one, since is started in my senior year, but that night was an absolute blast. </p>
+                <br>
+                <p>The Harvest Party is a great way to bring in the new year and to celebrate the cooler weather's arrival. It's a great evening of fun, music, and usually sitting around the fire. Like the Winter Soiree, the Harvest Party is held off campus; in recent years it has been held a a student's house. </p>
+            </div>
+        </div>
+
+        <!-- Second Parallax Image with Portfolio Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide">Timing</span>
+            </div>
+        </div>
+
+        <!-- Container (Portfolio Section) -->
+        <div class="w3-content w3-container w3-padding-64" id="portfolio">
+            <h3 class="w3-center">Dates for 2017-2018 School Year</h3>
+
+            <table class="w3-table-all">
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Mystery Night</td>
+                    <td>August 10</td>
+                    <td>Mystery Night is a time where the High School gets together for a night. No one other than Student Council knows where the destination is until they arrive.</td>
+                </tr>
+                <tr>
+                    <td>Sneak Peak</td>
+                    <td>August 24</td>
+                    <td>Each student and their family come to the school to take a look at their classroom and learn what to expect for the coming year.</td>
+                </tr>
+                <tr>
+                    <td>Moose River Outpost</td>
+                    <td>August 29-September 1</td>
+                    <td>The high school roadtrips to Jackman, Maine for a few days of learning in nature. On Thursday they take a white water rafting day trip, which is a highlight. </td>
+                </tr>
+                <tr>
+                    <td>Harvest Party</td>
+                    <td>October 5</td>
+                    <td>A high school event to ring in fall.</td>
+                </tr>
+                <tr>
+                    <td>Christmas Concert</td>
+                    <td>December 1</td>
+                    <td>The whole school participates in a fun night of Christmas carols and remembering the true meaning of Christmas.</td>
+                </tr>
+                <tr>
+                    <td>High School Winter Soiree</td>
+                    <td>January 27</td>
+                    <td>Dance, Eat, and Make Memories!</td>
+                </tr>
+                <tr>
+                    <td>Sweatheart Dance</td>
+                    <td>February 8</td>
+                    <td>A fun family event to celebrate Valentine's Day</td>
+                </tr>
+                <tr>
+                    <td>workcampNE</td>
+                    <td>April 15-20</td>
+                    <td>The high school gets a full week of local missions as they partner with workcampNE to repair homes in the Greater Manchester area.</td>
+                </tr>
+                <tr>
+                    <td>Spring Formal</td>
+                    <td>May 5</td>
+                    <td>The last big social event of the school year for the High School.</td>
+                </tr>
+                <tr>
+                    <td>Eden Exposition</td>
+                    <td>May 18</td>
+                    <td>Throughout the year each student creates a masterpiece. Projects have ranged from artwork to a lawn chair to a computer.</td>
+                </tr>
+                <tr>
+                    <td>Spring Arts Gala</td>
+                    <td>May 31</td>
+                    <td>A walkthough of art that has been made by students throughout the year as well as a performance by all of the music classes.</td>
+                </tr>
+                <tr>
+                    <td>High School Graduation</td>
+                    <td>June 8</td>
+                    <td>A final fairwell to the seniors as they receive their dimplomas and dance their way out of the auditorium as high school graduates..</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="imgs/wcne.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="workcampNE">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="imgs/first.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="High School helps 1st & 2nd Grade with their projects">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="imgs/eden.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Eden Expedition">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="imgs/cross.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="teamwork">
+            </div>
+
+            <div class="w3-row-padding w3-center w3-section">
+                <div class="w3-col m3">
+                    <img src="imgs/chapel.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Chapel">
+                </div>
+                <div class="w3-col m3">
+                    <img src="imgs/graduation.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="2016 Graduation">
+                </div>
+                <div class="w3-col m3">
+                    <img src="imgs/soccer.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="soccer">
+                </div>
+
+                <div class="w3-col m3">
+                    <img src="imgs/basketball.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="basketball">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img src="1" id="img01" class="w3-image" alt="">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <a href="https://www.facebook.com/mountzionnh/"></a><i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
+        </p>
+    </footer>
+
+    <!-- Add Google Maps -->
+    <script>
+        function myMap() {
+            myCenter = new google.maps.LatLng(42.9610357, -71.461345);
+            var mapOptions = {
+                center: myCenter,
+                zoom: 12,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+            marker.setMap(map);
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtlDNWRSVCemkzgcce3oQAIa4k27Za940&callback=myMap"></script>
+    <!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+
+</html>
